@@ -1,0 +1,40 @@
+Package: tsgc
+Title: Time Series methods based on growth
+Version: 0.0
+Authors@R: c(person(given = "Craig", family = "Thamotheram", role = c("aut", "cre"), email = "c.thamotheram@niesr.ac.uk"))
+Description: The goal of tsgc is to forecast the evolution of epidemics using time series models applied to growth curves.
+URL: https://bitbucket.org/Craig_PT/tsgc
+License: GPL (>= 3)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests:
+    ggfortify,
+    knitr,
+    RColorBrewer,
+    rmarkdown,
+    ggforce,
+    gridExtra,
+    latex2exp,
+    here,
+    timetk,
+    testthat,
+    purrr,
+    kableExtra
+Config/testthat/edition: 3
+Imports:
+    KFAS,
+    xts,
+    ggplot2,
+    ggthemes,
+    zoo,
+    magrittr,
+    scales,
+    dplyr,
+    tidyr,
+    methods
+BugReports: https://bitbucket.org/Craig_PT/tsgc/jira
+Depends:
+    R (>= 2.10)
+LazyData: true
