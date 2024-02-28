@@ -10,16 +10,19 @@ applied to growth curves.
 
 ## Installation
 
-You can install the development version of tsgc from [BitBucket](https://bitbucket.com/) 
+You can install the development version of tsgc from [Github](https://github.com/) 
 like so:
 
 ``` r
-    # install.packages("devtools")
-    devtools::install_bitbucket("Craig_PT/tsgc")
+    install.packages("devtools")
+    library(devtools)
+    devtools::install_github("Craig-PT/tsgc")
 ```
 
 or install from the locally downloaded package as:
 
-## Updating package locally
- - devtools::document()
- - devtools::install()
+## Install from downloaded package
+Install from the locally downloaded package as:
+```r
+    devtools::install()
+```
