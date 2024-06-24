@@ -70,7 +70,7 @@ This package is released under the GNU General Public License v3.0.
 
 If you use the `tsgc` package in your research, please cite it as follows:
 
-Ashby, M., Harvey, A., Kattuman, P., & Thamotheram, C. (2021). Forecasting epidemic trajectories: Time Series Growth Curves package `tsgc`. Cambridge Working Papers in Economics CWPE2407. URL: [https://www.econ.cam.ac.uk/research-files/repec/cam/pdf/cwpe2407.pdf]
+Ashby, M., Harvey, A., Kattuman, P., & Thamotheram, C. (2021). Forecasting epidemic trajectories: Time Series Growth Curves package `tsgc`. Cambridge Centre for Health Leadership & Enterprise. URL: [https://www.jbs.cam.ac.uk/wp-content/uploads/2024/03/cchle-tsgc-paper-2024.pdf]
 
 ## Acknowledgments
 

@@ -1,7 +1,7 @@
 Package: tsgc
 Title: Time Series methods based on growth
 Version: 0.0
-Authors@R: c(person(given = "Craig", family = "Thamotheram", role = c("aut", "cre"), email = "c.thamotheram@niesr.ac.uk"))
+Authors@R: c(person(given = "Craig", family = "Thamotheram", role = c("aut", "cre"), email = "cpt@tacindex.com"))
 Description: The goal of tsgc is to forecast the evolution of epidemics using time series models applied to growth curves.
 URL: https://bitbucket.org/Craig_PT/tsgc
 License: GPL (>= 3)
