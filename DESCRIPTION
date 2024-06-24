@@ -1,5 +1,5 @@
 Package: tsgc
-Title: Time Series methods based on growth
+Title: Time Series Methods Based on Growth
 Version: 0.0
 Authors@R: c(person(given = "Craig", family = "Thamotheram", role = c("aut", "cre"), email = "cpt@tacindex.com"))
 Description: The goal of tsgc is to forecast the evolution of epidemics using time series models applied to growth curves.
@@ -34,7 +34,7 @@ Imports:
     dplyr,
     tidyr,
     methods
-BugReports: https://bitbucket.org/Craig_PT/tsgc/jira
+BugReports: https://github.com/Craig-PT/tsgc/issues
 Depends:
     R (>= 2.10)
 LazyData: true
