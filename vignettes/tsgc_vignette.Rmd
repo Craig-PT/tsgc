@@ -252,7 +252,7 @@ More details on how to use the methods and functions described are presented in 
 
 In this section we provide a full working example of the `tsgc` package in `R` which implements the modeling framework for time series growth curves-based epidemic forecasting.
 
-`tsgc` comes with two example data sets relating to COVID-19: one for Gauteng province in South Africa (sourced from South Africa's official coronavirus online news and information [portal](https://sacoronavirus.co.za/)) and another for England (sourced from the official UK government [dashboard](https://coronavirus.data.gov.uk/) for data and insights on coronavirus). In the example that follows, we use the data on confirmed cases in Gauteng. The data series is in cumulative form and is loaded as an `xts` object with a date index, as follows.
+`tsgc` comes with two example data sets relating to COVID-19: one for Gauteng province in South Africa (sourced from South Africa's official coronavirus online news and information [portal](https://sacoronavirus.co.za/)) and another for England (sourced from the official UK government [dashboard](https://ukhsa-dashboard.data.gov.uk/) for data and insights on coronavirus). In the example that follows, we use the data on confirmed cases in Gauteng. The data series is in cumulative form and is loaded as an `xts` object with a date index, as follows.
 
 \begin{Code}
 data(gauteng, package = "tsgc")
