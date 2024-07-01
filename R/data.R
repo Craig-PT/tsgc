@@ -27,7 +27,7 @@
 #'
 #' @keywords datasets
 #'
-#' @references tba
+#' @references Downloaded from https://sacoronavirus.co.za/
 #'
 #' @examples
 #' data(gauteng)
@@ -50,7 +50,7 @@
 #'
 #' @keywords datasets
 #'
-#' @references Downloaded from https://api.coronavirus.data.gov.uk/v2/data
+#' @references Downloaded from https://ukhsa-dashboard.data.gov.uk/topics/covid-19
 #'
 #' @examples
 #' data(england)
