@@ -24,7 +24,7 @@ setOldClass("KFS")
 #' res <- model$estimate()
 #' # Print estimation results
 #' res$print_estimation_results()
-#' # Forecast 7 days ahead from the model
+#' # Forecast 7 days ahead from the end of the estimation window
 #' res$predict_level(y.cum = gauteng[idx.est], n.ahead = 7,
 #'   confidence_level = 0.68)
 #' # Forecast 7 days ahead from the model and return filtered states
@@ -63,8 +63,8 @@ FilterResults <- setRefClass(
        \\eqn{Y} the cumulative number of recorded infections.
        \\subsection{Parameters}{\\itemize{
         \\item{\\code{y.cum} The cumulated variable.}
-        \\item{\\code{n.ahead} The number of forecasts you wish to create from
-        the end of your sample period.}
+        \\item{\\code{n.ahead} The number of periods ahead you wish to forecast from
+        the end of the estimation window.}
         \\item{\\code{confidence_level} The confidence level for the log growth
          rate that should be used to compute
         the forecast intervals of \\eqn{y}.}
@@ -153,7 +153,7 @@ FilterResults <- setRefClass(
 
       out <- tbl %>%
         kableExtra::kbl(
-          caption = "Estimated params",
+          caption = "Estimated parameters",
           col.names = header.names,
           format = 'latex',
           booktabs = TRUE,
@@ -183,7 +183,7 @@ FilterResults <- setRefClass(
       (and filtered, where applicable) level
       of \\eqn{y} (\\code{y.hat}), \\eqn{\\delta} (\\code{level.t.t}),
       \\eqn{\\gamma} (\\code{slope.t.t}), vector of states including the
-      seasonals where applicable (\\code{a.t.t}) and covaraince matrix of all
+      seasonals where applicable (\\code{a.t.t}) and covariance matrix of all
       states including seasonals where applicable (\\code{P.t.t}).}"
       idx <- index
       model <- output
