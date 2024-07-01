@@ -52,7 +52,7 @@ SSModelBase <- setRefClass(
     },
     get_model = function(y, q = NULL)
     {
-      return(stop('NotImplementedError: Implement in subclass with your model'))
+      return(stop('Not Implemented Error: Implement in subclass with your model'))
     },
     get_dynamic_gompertz_model = function(
       y,
@@ -203,7 +203,7 @@ SSModelBase <- setRefClass(
       "Update method for Kalman filter to implement the dynamic Gompertz curve
        model.
        A maximum of 3 parameters are used to set the observation noise
-       (1 param), the transition equation slope and seaonal noise. If q (signal
+       (1 parameter), the transition equation slope and seasonal noise. If q (signal
         to noise ratio) is not null then the slope noise is set using this
         ratio.
        \\subsection{Parameters}{\\itemize{
