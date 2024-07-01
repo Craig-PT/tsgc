@@ -14,7 +14,7 @@
 #  A copy of the GNU General Public License is available at
 #  http://www.r-project.org/Licenses/
 
-#' Cumlative cases of Covid-19 in the South African provence of Gauteng.
+#' Cumulative cases of Covid-19 in the South African province of Gauteng.
 #'
 #' @docType data
 #'
@@ -37,7 +37,7 @@
 
 
 
-#' Cumlative cases of Covid-19 in England.
+#' Cumulative cases of Covid-19 in England.
 #'
 #' @docType data
 #'
