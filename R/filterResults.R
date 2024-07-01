@@ -56,8 +56,8 @@ FilterResults <- setRefClass(
       sea.on = FALSE,
       return.diff = FALSE)
     {
-      "Forecast the incidence of the cumulated variable. This function returns
-      the forecast incidence, \\eqn{y}, of the cumulated variable \\eqn{Y}. For
+      "Forecast the cumulated variable or the incidence of it. This function returns
+      the forecast of the cumulated variable \\eqn{Y}, or the forecast of the incidence of the cumulated variable, \eqn{y}. For
       example, in the case of an epidemic, \\eqn{y} might be daily new cases of
       the disease and
        \\eqn{Y} the cumulative number of recorded infections.
@@ -68,9 +68,9 @@ FilterResults <- setRefClass(
         \\item{\\code{confidence_level} The confidence level for the log growth
          rate that should be used to compute
         the forecast intervals of \\eqn{y}.}
-        \\item{\\code{return.diff} Logical value indicating whether to return
-        \\eqn{y} or the first difference of
-        \\eqn{y} (e.g. the change in daily new cases). Default is
+        \\item{\\code{return.diff} Logical value indicating whether to return the cumulated variable,
+        \\eqn{Y}, or the incidence of it,
+        \\eqn{y} (i.e., the first difference of the cumulated variable). Default is
         \\code{FALSE}.}
       }}
       \\subsection{Return Value}{\\code{xts} object containing the point
