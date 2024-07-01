@@ -18,10 +18,10 @@
 #
 #' @description Helper method to compute the log growth rates of cumulated
 #' variables. It will compute the log cumulative growth rate for each column in
-#' the dataframe.
+#' the data frame.
 #'
 #' @param dt Cumulated data series.
-#' @returns A dataframe of log growth rates of the cumulated variable which has
+#' @returns A data frame of log growth rates of the cumulated variable which has
 #' been inputted via the parameter \code{dt}.
 #'
 #' @examples
@@ -37,13 +37,13 @@ df2ldl <- function(dt) {
 }
 
 
-#' @title Reinitialise a dataframe by subtracting the `reinit.date` row from
+#' @title Reinitialise a data frame by subtracting the `reinit.date` row from
 #' all columns
 #'
 #' @param dt Cumulated data series.
 #' @param reinit.date Reinitialisation date. E.g. \samp{'2021-05-12'}.
 #'
-#' @returns The reinitialised dataframe
+#' @returns The reinitialised data frame
 #'
 #' @examples
 #' library(tsgc)
@@ -71,7 +71,7 @@ reinitialise_dataframe <- function(dt, reinit.date) {
 #' @param decreasing Logical value indicating whether \code{x} should be
 #' ordered in decreasing order. Default is \code{TRUE}. Setting this to
 #' \code{FALSE} would find the minimum.
-#' @returns The maxmium value and its index.
+#' @returns The maximum value and its index.
 #' @examples
 #' library(tsgc)
 #' data(gauteng,package="tsgc")
@@ -93,7 +93,7 @@ argmax <- function(x, decreasing=TRUE) {
 #' @param res Results object estimated using the \samp{estimate()} method.
 #' @param  res.dir File path to save the results to.
 #' @param Y Cumulated variable.
-#' @param n.ahead Number of forecasts to make.
+#' @param n.ahead Number of periods ahead to forecast.
 #' @param confidence.level Confidence level to use for the confidence interval
 #' on the forecasts \eqn{\ln(g_t)}.
 #' 
@@ -187,7 +187,7 @@ write_results <- function(res, res.dir, Y, n.ahead, confidence.level) {
 }
 
 
-## TODO: Can move to FilterResults.
+
 #' @title Returns forecast of number of periods until peak given
 #' \code{KFAS::KFS} output.
 #'
@@ -197,7 +197,7 @@ write_results <- function(res, res.dir, Y, n.ahead, confidence.level) {
 #' \eqn{\ell} is given by
 #' \deqn{\ell = \frac{\ln(-\gamma_{T|T})-\delta_{T|T}}{\gamma_{T|T}}.} This is
 #' predicated on \eqn{\gamma_{T|T}<0}, else there is super-exponential growth
-#' an no peak in sight. Of course, it only makes sense to investigate an
+#' and no peak in sight. Of course, it only makes sense to investigate an
 #' upcoming peak for \eqn{g_{y,T|T}>0} (when cases are growing). The estimates
 #' of \eqn{\delta_{T|T}} and \eqn{\gamma_{T|T}} are extracted from the
 #' \code{KFS} object passed to the function.
