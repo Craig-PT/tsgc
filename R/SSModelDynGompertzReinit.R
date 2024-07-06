@@ -191,7 +191,7 @@ SSModelDynGompertzReinit <- setRefClass(
             ncol(model_output$att) - 1}
         }
 
-        # 4.3 Reset slope to 0 and add constant to intial value for level.
+        # 4.3 Reset slope to 0 and add constant to initial value for level.
         # where reinit.date is t=r
         idx <- which(reinit.date == index(y))
         stopifnot(length(idx) == 1)
