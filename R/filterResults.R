@@ -57,7 +57,7 @@ FilterResults <- setRefClass(
       return.diff = FALSE)
     {
       "Forecast the cumulated variable or the incidence of it. This function returns
-      the forecast of the cumulated variable \\eqn{Y}, or the forecast of the incidence of the cumulated variable, \eqn{y}. For
+      the forecast of the cumulated variable \\eqn{Y}, or the forecast of the incidence of the cumulated variable, \\eqn{y}. For
       example, in the case of an epidemic, \\eqn{y} might be daily new cases of
       the disease and
        \\eqn{Y} the cumulative number of recorded infections.
