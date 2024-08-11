@@ -3,7 +3,7 @@
 \docType{data}
 \name{england}
 \alias{england}
-\title{Cumlative cases of Covid-19 in England.}
+\title{Cumulative cases of Covid-19 in England.}
 \format{
 An object of class \code{"xts"};
 \describe{
@@ -14,7 +14,7 @@ An object of class \code{"xts"};
 data(england)
 }
 \description{
-Cumlative cases of Covid-19 in England.
+Cumulative cases of Covid-19 in England.
 }
 \examples{
 data(england)
@@ -22,6 +22,6 @@ data(england)
 plot(diff(england))
 }
 \references{
-Downloaded from https://api.coronavirus.data.gov.uk/v2/data
+Downloaded from https://ukhsa-dashboard.data.gov.uk/topics/covid-19
 }
 \keyword{datasets}

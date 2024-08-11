@@ -13,7 +13,7 @@ write_results(res, res.dir, Y, n.ahead, confidence.level)
 
 \item{Y}{Cumulated variable.}
 
-\item{n.ahead}{Number of forecasts to make.}
+\item{n.ahead}{Number of periods ahead to forecast.}
 
 \item{confidence.level}{Confidence level to use for the confidence interval
 on the forecasts \eqn{\ln(g_t)}.}
