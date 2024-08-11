@@ -32,22 +32,17 @@ confidence intervals for these estimates.
 \examples{
 # Not run as do not wish to save to local disc when compiling documentation.
 # Below will run if copied and pasted into console.
-\dontrun{
 library(tsgc)
 library(here)
 
-res.dir <- here::here()
-
+res.dir <- tempdir()
 data(gauteng,package="tsgc")
-
 idx.est <- zoo::index(gauteng) <= as.Date("2020-07-06")
-
 res <- SSModelDynamicGompertz$new(Y = gauteng[idx.est], q = 0.005)$estimate()
 
 tsgc::write_results(
 res=res, res.dir = res.dir, Y = gauteng[idx.est], n.ahead = 14,
 confidence.level = 0.68
 )
-}
 
 }

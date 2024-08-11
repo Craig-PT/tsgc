@@ -31,6 +31,6 @@ peak for \eqn{g_{y,T|T}>0} (when cases are growing).
 forecast.peak(-2.87,-0.045)
 
 # Does not return a result (returns an error as gamma > 0)
-\dontrun{forecast.peak(-2.87,0.045)}
+try(forecast.peak(-2.87,0.045), silent=TRUE)
 
 }
